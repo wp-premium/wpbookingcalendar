@@ -1,0 +1,353 @@
+/* 
+    Document   : admin-booking-listing
+    Created on : 09.02.2014, 11:38:06
+    Author     : wpdevelop
+    Description: CSS for the Booking Listing admin page of Booking Calendar. 
+*/
+
+/* Listing Table **************************************************************/
+/* Header */
+.booking-listing-header {
+    background: #D7D7D7; /* for non-css3 browsers */
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D7D7D7', endColorstr='#E4E4E4'); /* IE6-9 */
+    background: -webkit-linear-gradient(center, bottom, #D7D7D7, #000); /* webkit-браузеров */
+    background: -moz-linear-gradient(center bottom, #D7D7D7, #E4E4E4) repeat scroll 0 0 transparent; /* firefox 3.6+ */
+    background: -o-linear-gradient(top, #D7D7D7, #E4E4E4); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #D7D7D7, #E4E4E4); /* IE10+ */
+    border: 1px solid #C6C6C6;
+    border-bottom-color: #CCC;
+    border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 2px 0px;
+    text-shadow: 0 1px 1px #F5F5F5;
+}
+.booking-listing-header .booking-listing-collumn {
+    text-align: center;
+}
+#booking_listings_interface_header .btn-group .dropdown-toggle {
+    box-shadow:0 0px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08);
+}    
+/* Row */
+.booking-listing-row {
+    border: 1px solid #C6C6C6;
+    border-top: none;
+    margin: 0px;
+    padding: 0px;
+}
+.booking-listing-row.row_alternative_color.row-fluid,
+.booking-listing-row.row_alternative_color.row,
+.booking-listing-row.row_alternative_color {
+    background: #F7F7F7;
+}
+.booking-listing-row.row-fluid.row_unread_color {
+    background: none repeat scroll 0 0 #FEA;
+}
+/* FixIn: 5.4.5.2 */
+.booking-listing-row.row-fluid.row_selected_color {
+    background: none repeat scroll 0 0 #9d3; 
+}
+/* Columns */
+.booking-listing-collumn {
+    margin: 5px 0px;
+}
+.booking-listing-collumn .field-id {
+    background-color: #777;
+    border: 1px solid #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 2px #888;
+    color: #EEE;
+    font-family: sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 2px 4px;
+    text-shadow: 0 0 3px #333;
+    margin: 0 10px;
+}
+.booking-listing-collumn .field-date {
+    font-size: 10px;
+    font-style: italic;
+    line-height: 12px;
+    margin: 20px 10px 5px;
+    padding: 0;
+    text-shadow: 0 -1px 0 #EEE;
+    white-space: nowrap;
+    float: right;
+}
+.booking-listing-collumn .field-time {
+    font-size: 9px;
+    white-space: nowrap;
+}
+.booking-listing-collumn .field-booking-date,
+.booking-listing-collumn .field-booking-date:hover {
+    background: none repeat scroll 0 0 #FFBB45;
+    border: 1px solid #EEE;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #CCC;
+    color: #FFF;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 4px 10px 3px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 #CCC;
+    white-space: nowrap;
+}
+.booking-listing-collumn .field-booking-date.approved,
+.booking-listing-collumn .field-booking-date.approved:hover {
+    background: none repeat scroll 0 0 #9BE;
+}
+.booking-listing-collumn .field-booking-time {
+    color: #555;
+    text-decoration: none;
+    text-shadow: 0 0 1px #AAA;
+}
+.booking-listing-collumn.booking-actions{
+    width:100%;
+    padding:0px;
+    clear: both;
+    float: none;
+}
+.booking-listing-collumn .cost-fields-group {
+    color: #444;
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    float:left;
+    margin-left: 5px;
+}
+.booking-listing-collumn .cost-fields-group a, 
+.booking-listing-collumn .actions-fields-group a{
+    margin-left: 5px;
+    vertical-align: top;
+}
+.booking-listing-collumn.booking-actions .button-secondary.button img {
+    vertical-align: middle;
+}
+/* Butons */
+.booking-listing-collumn .field-booking-cost {
+    width: 60px;
+}
+.booking-listing-collumn .field-currency {
+    color: #444;
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 28px;
+    vertical-align: top;
+}
+/* Labels */
+#listing_visible_bookings .new-label {
+    margin: 0 0 0 -23px;
+    padding: 3px;
+    position: absolute;
+}
+.booking-listing-collumn .label {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 0 1px #CCCCCC;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+.booking-listing-collumn .label-pending {
+    background: none repeat scroll 0 0 #FFBB45;
+}
+.booking-listing-collumn .label-approved {
+    background: none repeat scroll 0 0 #9BE;
+}
+.payment-label-success {
+    background-color: #468847 !important;
+}
+.payment-label-pending {
+    background-color: #992 !important;
+}
+.payment-label-unknown {
+    background-color: #999 !important;
+}
+.payment-label-error {
+    background-color: #FA773D !important;
+}
+
+/* UI Elements **********************************************************/
+.fieldvalue {
+    background: none repeat scroll 0 0 #FE9;
+    border-radius: 3px 3px 3px 3px;
+    color: #333;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 3px 0 0;
+    padding: 2px 3px;
+    text-shadow: 0 1px 1px #EEE;
+}
+.label_resource_not_exist {
+    color: #000;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #59D;
+    text-transform: none;
+}
+.booking_row_modification_element {
+    display: none;
+    clear: both;
+    width: 100%;
+}
+.booking_row_modification_element_changing_resource {
+    height: auto;
+}
+.booking_row_modification_element .btn-save-cost,
+.booking_row_modification_element.booking_edit_note a,
+.booking_row_modification_element select{
+    float: left;
+    margin: 0 0 10px 10px;
+}
+#hided_boking_modifications_elements, 
+.hided_boking_modifications_elements {    /* FixIn:5.4.5.1 */
+    display: none;
+}
+#wh_booking_date_container fieldset label.check_in_out,
+#wh_modification_date_container fieldset label{
+    height: auto !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    vertical-align: middle;
+}
+.wpbc-search-by-booking-id {
+    position: absolute; 
+    right: 15px;
+    top: 25px;
+}
+/* Dates *********************************************************/
+.wpdevbk .visible_items,
+.visible_items {
+    display: block;
+}
+.wpdevbk .hidden_items,
+.hidden_items {
+    display: none;
+}
+.date_tire {
+    font-size: 17px;
+    font-weight: bold;
+}
+.booking_dates_small,
+.booking_dates_full {
+    line-height: 24px;
+}
+.booking-listing-collumn .date_from_dif_type {
+    color: #FFF;
+    text-shadow: 0 -1px 0 #BBB;
+}
+
+/* Filter Top Section *********************************************************/
+.wpdevbk-filters-section input,
+.wpdevbk-filters-section textarea,
+.wpdevbk-filters-section select,
+.wpdevbk-filters-section .uneditable-input {
+    margin-bottom: 0px;
+}
+.wpdevbk .wpdevbk-filters-section .add-on,
+.wpdevbk .wpdevbk-filters-section .input-prepend, 
+.wpdevbk .wpdevbk-filters-section .input-append {
+    margin-bottom: 1px;
+    height: 22px;
+    padding: 3px 3px 1px;
+}
+.wpdevbk .wpdevbk-filters-section .input-prepend{
+    padding: 0;
+}
+/* This trick show correctly prepand text element in one row in Safari. Do not use display:inline-block */
+.wpdevbk .wpdevbk-filters-section .input-prepend input[type=text] {
+    display:block;
+    float:left;
+}
+.wpdevbk-filters-section .control-group {
+    margin-right: 15px;
+}
+.wpdevbk-filters-section .control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    margin-right: 5px;
+}
+.wpdevbk-filters-section .controls {
+    float: left;
+}
+.wpdevbk-filters-section .help-block {
+    display:none;
+}
+
+.wpdevbk .wpdevbk-filters-section form {
+    margin-bottom: 0px;
+}
+.wpdevbk a.chzn-single:hover {
+    text-decoration: none;
+}
+.wpdevbk .booking-submenu-tab-container .tab-bottom {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #EEE;
+    border-color: #BBC;
+    border-width: 1px;
+    border-style: dashed solid solid;
+    border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 1px #DDD;
+    padding: 0px 7px;
+    position: absolute;
+}
+
+/* Corrections of some CSS in Interface elements from Filter section **********/
+.advanced_booking_filter .inline.controls {
+    height:28px;
+}
+#wh_booking_date,
+#wh_booking_date2,
+#wh_modification_date,
+#wh_modification_date2 {
+    width: 75px;
+}
+#wh_approved_selector {
+    width: auto;
+}
+#wh_keyword {
+    width: 135px;
+    border-color: #aaa;
+}
+#wh_pay_status {
+    width: 95px;
+}
+#wh_booking_type {
+    width: 180px;
+}
+#bk_booking_filters_form .form-actions {
+    margin-top: 0px;
+}
+#wh_cost, 
+#wh_cost2 {
+    width:75px;
+}
+
+/* Modal Google Calendar Events Import */
+#wpbc_gcal_import_events span.description {
+    display:none;
+}
+#wpbc_gcal_import_events #booking_gcal_events_until, 
+#wpbc_gcal_import_events .booking_gcal_events_until_offset, 
+#wpbc_gcal_import_events #booking_gcal_events_from, 
+#wpbc_gcal_import_events .booking_gcal_events_from_offset {
+    float:left;
+    margin:5px 0 0 0 !important;
+}
+#wpbc_gcal_import_events .booking_gcal_events_from_offset label, 
+#wpbc_gcal_import_events .booking_gcal_events_until_offset label {
+    margin: 0 10px;
+    float:left;
+    line-height: 29px;
+}

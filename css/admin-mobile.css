@@ -1,0 +1,425 @@
+/* 
+    Document   : Admin CSS for Mobile devices
+    Created on : 23.12.2013, 13:04:50
+    Author     : wpdevelop
+    Description: Booking Calendar Admin Panel CSS for the Mobile devices.
+*/
+
+@media (max-width: 782px) {      /* iPad mini and all iPhones  and other Mobile Devices */
+    /* Settings Rows */
+    .booking_settings_row {
+        width:100% !important;
+        float:none !important;
+        margin:0px !important;
+    }
+
+    /* Settings Top TABS */
+    #menu-wpdevplugin .nav-tab {        
+/*        padding: 10px 4px 5px;*/
+        padding: 10px 15px 5px;
+    }
+    #menu-wpdevplugin .nav-tab .nav-tab-text {
+        display:none;
+    }
+    #booking_listings_interface_header #menu-wpdevplugin .nav-tab {
+       padding: 10px 15px 5px;
+    }
+    
+    a.booking-submenu-tab.nav-tab.bottom-submenu-tab, 
+    a.nav-tab.booking-submenu-tab{
+        display: block;
+        float: none;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin: 0 0 0 10%!important;
+        padding: 10px;
+        vertical-align: middle;
+        width: auto;
+        border-radius: 0;
+        -moz-border-radius:0;
+        -webkit-border-radius:0;
+    }    
+    .booking-submenu-tab-insidecontainer, .wpdevbk .booking-submenu-tab-insidecontainer {
+        margin:0;
+        padding:0;
+        border-radius: 0;
+        -moz-border-radius:0;
+        -webkit-border-radius:0;        
+    }
+    .booking-submenu-tab-separator-vertical {
+        display:none;
+    }
+
+    /* Settings Icons in Tabs */
+    .menuicons {
+        height: 20px;
+        margin: 0 7px 0 8px;
+        position: relative;
+        vertical-align: text-bottom;
+        width: 20px;
+    }
+
+    /* UI Elements */
+    .wpbc_mobile_legend {
+        display:inline;
+        font-size: 14px;
+        font-weight: normal;
+        float: left;
+        line-height: 1.3em;
+    }
+    .wpbc_mobile_legend.clear{
+        float:none;
+        display:block;
+    } 
+    .form-table td input[type="text"], 
+    .form-table td input[type="password"], 
+    .form-table td select, 
+    .form-table td textarea {
+        width:100% !important;
+    }
+    .bookingpage input[type="text"],
+    .bookingpage select, 
+    .wpdevbk input[type="text"], 
+    .wpdevbk select,
+    #or_sort_selector, 
+    #wh_booking_date_container fieldset label,
+    #wh_modification_date_container fieldset label{
+        line-height: 30px !important;
+        padding: 8px 10px 9px !important;
+        height: 36px !important;
+        padding: 7px 10px !important;
+    }
+    .bookingpage input[type="text"],     
+    #filter_name {
+        line-height: 16px !important;                                           
+        height: 36px !important;
+        height: 26px !important;                                                /* FixIn: 5.4.5.14 */        
+        line-height: 16px !important;
+        padding: 4px 5px !important;        
+
+    }
+    #or_sort_selector {
+        line-height: 16px !important; 
+    }
+    .advanced_booking_filter .inline.controls {
+        height:37px;
+    }    
+    .branch-3-3 .bookingpage .button, 
+    .branch-3-3 .bookingpage .button-secondary, 
+    .branch-3-3 .bookingpage #or_sort_selector, 
+    .branch-3-3 .bookingpage #wh_booking_date_container fieldset label, 
+    .branch-3-3 .bookingpage #wh_modification_date_container fieldset label,        
+    .branch-3-4 .bookingpage .button, 
+    .branch-3-4 .bookingpage .button-secondary, 
+    .branch-3-4 .bookingpage #or_sort_selector, 
+    .branch-3-4 .bookingpage #wh_booking_date_container fieldset label, 
+    .branch-3-4 .bookingpage #wh_modification_date_container fieldset label,        
+    .branch-3-5 .bookingpage .button, 
+    .branch-3-5 .bookingpage .button-secondary, 
+    .branch-3-5 .bookingpage #or_sort_selector, 
+    .branch-3-5 .bookingpage #wh_booking_date_container fieldset label, 
+    .branch-3-5 .bookingpage #wh_modification_date_container fieldset label,        
+    .branch-3-6 .bookingpage .button, 
+    .branch-3-6 .bookingpage .button-secondary, 
+    .branch-3-6 .bookingpage #or_sort_selector, 
+    .branch-3-6 .bookingpage #wh_booking_date_container fieldset label, 
+    .branch-3-6 .bookingpage #wh_modification_date_container fieldset label,        
+    .branch-3-7 .bookingpage .button, 
+    .branch-3-7 .bookingpage .button-secondary, 
+    .branch-3-7 .bookingpage #or_sort_selector, 
+    .branch-3-7 .bookingpage #wh_booking_date_container fieldset label, 
+    .branch-3-7 .bookingpage #wh_modification_date_container fieldset label {
+        line-height: 36px !important;        
+        height: 36px !important;
+        font-size: 14px;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .add-on {
+         height: auto !important;
+         padding:8px 5px !important;
+    }
+    .control-group label.control-label {
+          line-height: 2em;
+    }
+    .input-prepend input[type=text] {
+        display: inline;
+    }
+    .wpdevbk .wpdevbk-filters-section .input-prepend {
+        height: 31px;        
+    }
+    label.wpbc_inline_legend {
+        width:100% !important;
+    }    
+
+    /* BS UI Elements */
+    .btn-toolbar .btn-group {
+        width:100% !important;
+        margin:10px;
+    }
+    .btn-toolbar .btn-group select.span3, 
+    .btn-toolbar .btn-group input.span3 {
+        width:55%;
+    }
+
+    /* Different Setting Options */
+    .wpbc-secondary-suboptions {
+        margin-left:25px;
+    }
+    .form-table span.description {
+        font-size: 14px;
+        padding: 2px;
+    }     
+    .nav-tabs.booking-submenu-tab-insidecontainer {
+        padding:10px;
+    }
+
+    /* Booking Listing Table */
+    /* UI */
+    .wpdevbk-filters-section {
+           padding: 5px 0 0;
+    }
+    .chzn-container-multi .chzn-choices {
+        padding: 3px 0;
+    }
+    #denyreason {                                                               /* FixIn: 5.4.5.14 */        
+        height: 33px !important;
+        padding: 1px 5px 1px !important;
+    } 
+    .bookingpage .wpdevbk input[type="text"], 
+    .bookingpage .wpdevbk select{
+        margin-bottom: 0px;
+    }
+    .bookingpage .form-table input[type="text"], 
+    .bookingpage .wpdevbk input[type="text"]{
+        line-height: 16px !important;
+    }
+    #booking_listings_interface_header .btn-group .dropdown-toggle {
+        height: 36px;
+        margin-bottom: 1px;
+        box-shadow:0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, 0.08)
+    }    
+    #booking_listings_interface_header .btn-group #start_date_selection_in_navigation_selector {
+        height: 33px;
+    }
+    /* Listing */
+    #booking_listings_interface_header .nav-tabs .dropdown.pull-right .caret{
+/*        display:none;*/
+        vertical-align: middle;
+    }
+    #booking_listings_interface_header .nav-tabs.booking-submenu-tab-insidecontainer {
+        padding: 10px 10px 0;
+    } 
+    #listing_visible_bookings .new-label {
+        display:none;
+    }
+    #listing_visible_bookings .booking-listing-header {
+        background: none;
+        border-bottom: medium none;
+        height: 5px;
+        padding: 0;
+    }
+    #listing_visible_bookings .booking-listing-header div{
+        display: none;
+    }
+    #listing_visible_bookings .booking-listing-collumn{
+        margin:5px !important;
+        text-align: left !important;
+    }
+    #listing_visible_bookings .wpbc_column_1 {
+        text-align: left !important;
+    }
+    #listing_visible_bookings .wpbc_column_1 input[type=checkbox]{
+        margin:0 -15px 0 5px;
+    }
+    #listing_visible_bookings .wpbc_column_1 span.wpbc_mobile_legend {
+        margin-left: 10px;
+        vertical-align: middle;
+        display:inline;
+    }
+    #listing_visible_bookings .wpbc_column_1 .field-date, 
+    #listing_visible_bookings .wpbc_column_1 .field-time{
+        display:inline;
+        font-size:14px;
+        font-style: normal;
+        vertical-align: middle;
+    }
+    #listing_visible_bookings .wpbc_column_2 {
+        text-align: right !important;
+    }
+    #listing_visible_bookings .booking-listing-collumn .field-booking-cost {
+        height: 34px !important;
+    }
+    #wpbc_gcal_import_events {
+        width:85% !important;
+    }
+
+    /* Calendar Overview */
+    .bookings_overview_in_calendar_frame table td:first-child,
+    .bookings_overview_in_calendar_frame table th:first-child{
+        display: table-cell;
+        padding-left:4px;
+        padding-right:5px;
+        width: auto !important;
+        
+
+        overflow: hidden;
+        white-space: nowrap;
+        word-wrap: normal;      
+        
+        
+/*        display: inline-block;
+        overflow: hidden;
+        padding-left: 4px;
+        padding-right: 5px;
+        position: relative;
+        white-space: nowrap;
+        width: 85px !important;
+        word-wrap: normal;
+        z-index: 2;    */
+    }
+    .bookings_overview_in_calendar_frame table td:last-child,
+    .bookings_overview_in_calendar_frame table th:last-child{
+        width: 100%;
+    }
+    .bookings_overview_in_calendar .resource_title.child {
+        margin-left: 15px;
+    }
+    .bookings_overview_in_calendar .resource_title {
+        font-size:10px;
+    }
+    .wpdevbk.popover.fade.bottom.in .popover-inner{
+/*      width:95% !important;*/
+/*      display:inline-block;*/
+    }
+    .wpbc-search-by-booking-id {
+        position: absolute; 
+        right: 5px;
+        top: 10px;
+    }
+    .wpbc-search-by-booking-id button.button{
+        padding: 8px 14px;
+    }
+    .wpdevbk #bk_settings_form_fields label.checkbox.inline {
+        line-height: 3em;            
+    }
+    /* Users Table Settings */
+    .users_table .user-table-field-user_id{
+        display:none;
+    }
+    .users_table .user-table-field-user_labels{
+        display:none;
+    }
+    .users_table .user-table-field-user_type{
+        display:none;
+    }
+
+    /* Resources Table Settings */
+    .resource_table.booking_table th,
+    .users_table th{
+        display: none;
+    }
+    .resource_table.booking_table td,
+    .users_table td{
+        display: block;
+        width: auto;
+        font-size: 14px;
+        text-align:left !important;
+        border-left:0px !important; 
+        border-top:0px !important; 
+        font-weight: normal;       
+        padding:10px !important; 
+        line-height: 19px;
+        min-height: 1em;
+    }
+    .users_table.booking_table td.user-table-field-actions {
+        height: 64px;
+    }
+    .users_table.booking_table td{
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;    
+        box-sizing: border-box;         
+        width: 100%;
+    }
+    .resource_table .wpbc_table_footer td {
+        border-top: 0px;
+    }
+    .resource_table.booking_table td input[type=text],
+    .resource_table.booking_table td select{
+        width:100% !important;
+    }
+    .resource_table.booking_table td input[type="checkbox"], 
+    .resource_table.booking_table td input[type="radio"]{
+        margin-bottom: 0;
+    }
+    .resource_table.booking_table.wpbc_rates_table .rates_collumn input[type=text] {
+        height: 36px !important;
+        text-align: right;
+        width: 50% !important;
+        float:left;
+    }
+    .resource_table.booking_table.wpbc_rates_table .rates_collumn select {
+        height: 36px;
+        width: 49% !important;
+        margin-left:1%;
+        float:left;
+    }
+    .wpbc_deposit_table .rates_collumn input[type=text] {
+        height: 36px;
+        text-align: right;
+        width: 45% !important;
+        float:left;
+    }
+    .resource_table.booking_table.wpbc_rates_table .rates_collumn select ,
+    .wpbc_deposit_table .rates_collumn select {
+        height: 36px;
+        width: 45% !important;        
+        float:right;
+        
+    }
+    .resource_table.booking_table td select {
+        padding: 6px 10px !important;
+    }
+    /*  Valuation days Table ******************************************************/
+    .resource_table.booking_table.wpbc_valuationdays_table td input[type=text] {
+        height: 36px !important;
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td div,
+    .resource_table.booking_table.wpbc_valuationdays_table td div div{
+        display:block;
+/*        float:none !important;*/
+        width: 100% !important;
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td input[type=text] ,
+    .resource_table.booking_table.wpbc_valuationdays_table td select {
+        width:100%;
+        text-align: left;
+        margin:5px 0;
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td .wpbc_text-label{
+        display:none;
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td.wpbc_column_2 input[type=text] {
+        width: 40% !important;
+        float:left;        
+    }    
+    .resource_table.booking_table.wpbc_valuationdays_table td.wpbc_column_2 .wpbc_field_cost-to .wpbc_text-label{
+        display:block;
+        float:left !important;
+        width:15%;
+        line-height: 3em;
+        text-align: center;
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td.wpbc_column_2 .wpbc_field_cost-to input[type=text]{
+        float:right;        
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td.wpbc_column_3 input[type=text] {
+        width: 30% !important;
+        float:left;        
+    }
+    .resource_table.booking_table.wpbc_valuationdays_table td.wpbc_column_3 select {
+        width: 69% !important;
+        margin-left:1%;
+        float:left;
+    }
+}

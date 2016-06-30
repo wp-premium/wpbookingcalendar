@@ -1,0 +1,120 @@
+/* 
+    Document   : Booking Calendar Search Form  and Serach Results Skin
+    Created on : 05/07/2014, 10:15:28
+    Author     : wpdevelop
+*/
+/* Search form */
+#booking_search_form .hasDatepick{
+    width: 6em;
+}
+#booking_search_form input,
+#booking_search_form select {    
+    margin-bottom: 5px;
+}
+#booking_search_form input[type="text"],
+#booking_search_form select {
+    margin-right:20px;
+    padding:4px;
+}
+#booking_search_form label {
+    margin-bottom: 5px;
+    vertical-align: middle;
+} 
+.booking_search_result_item a.wpbc_book_now_link, 
+.booking_search_result_item a.wpbc_book_now_link:hover, 
+.wpbc_book_now_link,
+.wpbc_book_now_link:hover {
+    background:none !important;
+    border:0 !important;
+    float:none !important;
+}
+.widget_bookingsearchwidget #booking_search_form input.hasDatepick {
+    clear: both;
+    margin: 0 0 10px;
+    width: 96%;                                                                 /* FixIn: 6.1.0.1 */
+}
+.widget_bookingsearchwidget #booking_search_form input,
+.widget_bookingsearchwidget #booking_search_form select,
+.widget_bookingsearchwidget #booking_search_form label{    
+    margin-bottom: 10px;
+}
+.widget_bookingsearchwidget #booking_search_form input[type='checkbox'] {       /* //FixIn: 6.0.1.1 */
+    margin-bottom: 2px;
+}
+.widget_bookingsearchwidget #booking_search_form .search_booking {
+    width:auto;
+}
+.widget_bookingsearchwidget #booking_search_form label{
+    clear:both;
+}
+
+@media (max-width: 782px) {  
+    .wpdevbk input[type="text"], 
+    .wpdevbk select{
+        font-size: 1.1em;
+        height: auto;
+        padding: 4px 8px;
+    }
+}
+
+/*Search results*/
+#booking_search_ajax {
+    margin-bottom: 20px;
+}
+.booking_search_result_item {
+    clear: both;
+    margin: 10px 0px;
+    padding: 5px 5px 20px;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 0.9em;
+}
+.booking_search_result_item .booking_search_result_title {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.booking_search_result_item img.booking_featured_image {
+    border: 1px solid #CCC;
+    padding: 2px;
+    width: 200px !important;
+    float: left;
+    margin: 5px 15px 5px 0px !important;
+}
+.booking_search_result_item .booking_search_result_info {
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 10px;
+}
+.booking_search_result_visitors_num,
+.booking_search_result_items_num,
+.booking_search_result_cost {
+    font-weight: bold;
+}
+.booking_search_result_item label {
+    font-size: 16px;
+    font-weight: bold;
+}
+.booking_search_result_item a {
+    -box-shadow: 0 0 1px #DDD;
+    -webkit-box-shadow: 0 0 1px #DDD;
+    -moz-box-shadow: 0 0 1px #DDD;
+    background: none repeat scroll 0 0 #F5F5F5 !important;
+    color: #717171 !important;
+    font-family: Helvetica;
+    font-size: 12px !important;
+    line-height: 18px;
+    font-weight: bold !important;
+    text-shadow: 0 0 1px #FFF;
+    float: right;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid #BBB;
+    -border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.booking_search_result_item a:hover {
+    background: none repeat scroll 0 0 #EEE !important;
+}
